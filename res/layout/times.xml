@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    tools:context="${packageName}.${activityClass}" >
+    
+    <!-- <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="MY TIMESHEET"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"/> -->
+ 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="ACTIVITY TYPE:"
+        android:textStyle="bold|italic"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+    
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:popupBackground="#999999"/>
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="PROJECT NAME:"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/spinner1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+    
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:popupBackground="#999999"/>
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="TASK:"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/spinner2"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+    
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:popupBackground="#999999"/>
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="ACTIVITY DATE:"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/spinner3"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+    
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:popupBackground="#999999"/>
+    
+    
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="WORKING HOURS:"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/spinner4"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+    
+   <EditText
+            android:id="@+id/wrkhrs"
+            android:layout_width="10dp"
+            android:layout_height="25dip"
+            android:inputType="number"
+            android:hint="Enter Me"
+            android:background="#999999"
+                   android:layout_toRightOf="@+id/textView5"
+            android:singleLine="true"/>
+   
+   <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_below="@+id/textView5"
+        android:gravity="center_horizontal" />
+    
+    
+    
+ 
+</RelativeLayout>

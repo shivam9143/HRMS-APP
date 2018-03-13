@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:fillViewport="true"
+android:layout_height="wrap_content"
+android:layout_margin="20dp"
+
+>
+    
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RadioGroup 
+        android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/radioGroup"
+        >
+    
+ <RadioButton
+                android:id="@+id/approvalRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Application(s) for Leave Approval" 
+                android:layout_marginBottom="5dp"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/cancellationRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+				android:layout_gravity="center_horizontal|center_vertical"
+                android:text="Application(s) for Leave Cancellation" 
+                android:checked="false"
+                android:layout_marginBottom="5dp"
+                />        
+    </RadioGroup>
+    
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Leave Type"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+         <Spinner
+        android:id="@+id/SLeaveType"
+                android:layout_width="200dp"
+                android:textColor="#000000"
+                android:color="#000000"
+        		android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+        		android:layout_marginBottom="20dp"
+       		    android:gravity="end"
+       		    android:popupBackground="#cccccc"
+         />          
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rsnbtn"
+        android:id="@+id/hsva"
+        android:text="Application For Leave Approval"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal|center_vertical"
+        />
+    
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:src="@drawable/no_data" />
+    
+    <HorizontalScrollView 
+    
+    android:id="@+id/hsvapprove"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:weightSum="20" >
+	
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+     android:divider="?android:listDivider"
+     android:dividerPadding="22dip"
+     android:showDividers="middle"
+       android:weightSum="20">
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Employee Name"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave"
+           android:textStyle="bold" />
+       
+      <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave Type"
+           android:textStyle="bold" />
+       
+        
+     <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Application No."
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave From"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave To"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Days"
+           android:textStyle="bold" />
+       
+             <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Half Leave Type"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Applied Date"
+           android:textStyle="bold" />
+        <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Approved By"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="App/Rej Reason"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:id="@+id/checkallapprove"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Approve/Reject"
+           android:textStyle="bold" />
+
+       <CheckBox
+           android:layout_width="150dp"
+			android:id="@+id/checkall"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+           android:text="Select All"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+
+   <ListView
+       android:id="@+id/approvelist"
+       android:layout_width="wrap_content"
+       android:layout_height="200dp" >
+   </ListView>
+                         
+  
+</LinearLayout>
+
+
+
+
+</HorizontalScrollView>
+ <Button 
+     android:id="@+id/btnapprove"
+     android:layout_marginTop="10dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     android:text="Submit"
+     android:textColor="#ffffff"
+     android:background="@drawable/rsnbtn"
+     />
+    
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+                android:background="@drawable/rsnbtn"
+        android:id="@+id/hsvc"
+                android:layout_marginBottom="5dp"
+        
+        android:text="Application For Leave Cancellation"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal|center_vertical"
+        />
+    
+    <HorizontalScrollView 
+    
+    android:id="@+id/hsvcancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+        
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+   android:weightSum="20" >
+	
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+     android:divider="?android:listDivider"
+     android:dividerPadding="22dip"
+     android:showDividers="middle"
+       android:weightSum="20">
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Employee Name"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave"
+           android:textStyle="bold" />
+       
+      <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave Type"
+           android:textStyle="bold" />
+       
+        
+     <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Application No."
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave From"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave To"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Total Days"
+           android:textStyle="bold" />
+       
+             <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Approval Status"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="CFrom"
+           android:textStyle="bold" />
+        <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="CTo"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="App/Rej Reason"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="CDays"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Cancel Request"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+
+   <ListView
+		android:id="@+id/cancellist"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent" >
+   </ListView>
+
+                                      
+</LinearLayout>
+</HorizontalScrollView>
+ <Button 
+     android:id="@+id/btncancel"
+     android:layout_marginTop="10dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     android:text="Submit"
+     android:gravity="center_vertical"
+     android:textColor="#ffffff"
+     android:background="@drawable/rsnbtn"
+     />
+
+</LinearLayout>
+
+</ScrollView>

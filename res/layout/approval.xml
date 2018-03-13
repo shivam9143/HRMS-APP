@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:fillViewport="true"
+android:layout_height="wrap_content"
+>
+   
+
+<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:orientation="horizontal" 
+        android:weightSum="10">
+    
+    <TextView
+            android:id="@+id/empnamet"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" 
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:singleLine="false"
+            android:maxLines="10"/>
+                  
+  
+       
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="fill_parent" 
+        android:layout_alignParentLeft="true"
+        android:scaleType="center"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+        
+
+        <TextView
+            android:id="@+id/leavet"
+            android:layout_width="150dp"
+             android:textColor="@android:color/black"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:singleLine="false"
+            android:maxLines="10"
+            android:layout_weight="1.5"/>
+        
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+
+        <TextView
+            android:id="@+id/leavetypet"
+            android:layout_width="150dp"
+        	  android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+              android:gravity="center"
+              android:singleLine="false"
+            android:maxLines="2"
+            android:layout_weight="1.5" />
+        
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+
+        <TextView
+            android:id="@+id/appnumbert"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" 
+              android:gravity="center"
+                          android:textColor="@android:color/black"
+              android:singleLine="false"
+            android:maxLines="2"
+            android:layout_weight="1.5"/>
+       
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+
+        <TextView
+            android:id="@+id/leavefromt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+              android:gravity="center" 
+                          android:textColor="@android:color/black"
+              
+              android:singleLine="false"
+            android:maxLines="10"
+            android:layout_weight="1.5"/>
+            
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+
+        <TextView
+            android:id="@+id/leavetot"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+                        android:gravity="center"
+            
+            android:textColor="@android:color/black"
+            android:maxLines="10"
+            android:layout_weight="1.5" />
+        
+<View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+        <TextView
+            android:id="@+id/dayst"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="@android:color/black"
+            android:maxLines="10"
+              android:gravity="center"
+            android:layout_weight="1.5" />
+        
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+        <TextView
+            android:id="@+id/halfleavet"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+                        android:gravity="center"
+            
+            android:textColor="@android:color/black"
+            android:singleLine="false"
+            android:maxLines="10"
+            android:layout_weight="1.5" />
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="#24305e" />
+        
+        <TextView
+            android:id="@+id/applieddatet"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="@android:color/black"
+            android:maxLines="10"
+              android:gravity="center"
+            android:layout_weight="1.5" />
+        
+<View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+        <TextView
+            android:id="@+id/approvedbyt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="@android:color/black"
+            android:maxLines="10"
+              android:gravity="center"
+            android:layout_weight="1.5" />
+        
+        <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+        <EditText
+            android:id="@+id/rejreasont"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+              android:gravity="center"
+            android:textColor="@android:color/black"/>
+         <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+       
+        
+
+   <RadioGroup 
+        android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/selectt"
+        >
+    
+ <RadioButton
+                android:id="@+id/approvalRBchk"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Approve" 
+                android:layout_marginBottom="5dp"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:id="@+id/cancellationRBchk"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+				android:layout_gravity="center_horizontal|center_vertical"
+                android:text="Reject" 
+                android:checked="false"
+                android:layout_marginBottom="5dp"
+                />        
+    </RadioGroup>
+    
+        
+         <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+         
+                 <CheckBox
+            android:id="@+id/checkit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+             />
+         
+       
+         <View
+        android:layout_width=".5dip"
+        android:layout_height="match_parent" 
+        android:layout_alignParentLeft="true"
+              android:layout_centerInParent="true"
+        android:background="#24305e" />
+        
+       	       
+       	       
+  </LinearLayout>
+</ScrollView>

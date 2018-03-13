@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" android:background="#000000"
+android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#000000">
+
+    <LinearLayout 
+    android:layout_width="300dp" 
+    android:layout_height="100dp"
+    android:id="@+id/l1"
+    android:gravity="center">
+    
+        
+    <!-- <ImageView android:id="@+id/i1"  
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:src="@drawable/e" /> -->
+    
+    
+    <ImageView android:src="@drawable/ts" 
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:paddingLeft="60dp"
+        android:layout_gravity="center"
+        
+        >
+        
+        
+    </ImageView>
+    
+</LinearLayout>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+       >
+    
+        <TextView android:id="@+id/textView1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:text="ACTIVITY TYPE:"
+                  android:textStyle="bold|italic"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+    
+    <!--       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ACTIVITY TYPE:"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000080"/> -->
+    
+    <Spinner
+        android:id="@+id/spinneracttype"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:popupBackground="#000000"/>
+    
+      <TextView android:id="@+id/textView2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:text="PROJECT NAME: "
+                  android:textStyle="bold|italic"
+                   android:layout_below="@+id/spinner1"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+    
+    <!-- <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="PROJECT NAME:"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/spinner1"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000080"/> -->
+    
+    <Spinner
+        android:id="@+id/spinnerproj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:popupBackground="#000000"/>
+    
+       <TextView android:id="@+id/textView3"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:text="TASK:"
+                  android:textStyle="bold|italic"
+                   android:layout_below="@+id/spinner2"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+    
+    <!-- <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="TASK:"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/spinner2"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000080"/> -->
+    
+    <Spinner
+        android:id="@+id/spinnertask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:popupBackground="#000000"/>
+    
+     <TextView android:id="@+id/textView4"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:text="ACTIVITY DATE:"
+                  android:textStyle="bold|italic"
+                   android:layout_below="@+id/spinner3"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+    
+    <!-- <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="ACTIVITY DATE:"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/spinner3"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#000080"/> -->
+    
+    <Spinner
+        android:id="@+id/spinnerdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:popupBackground="#000000"
+      />
+    
+    
+     <TextView android:id="@+id/textView5"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50dp"
+                  android:textSize="20dp"
+                  android:text="WORKING HOURS:"
+                  android:textStyle="bold|italic"
+                   android:layout_below="@+id/spinner4"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+    
+   <EditText
+            android:id="@+id/wrkhrs"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:inputType="number"
+             android:text="0"
+             android:textColor="#000000"
+            android:hint="Enter Me!!!"
+               android:background="@layout/edittextprop"
+            android:singleLine="true"/>
+          <!--   android:layout_marginBottom="20dip"
+            android:layout_marginTop="10dip" -->
+            
+               
+     <TextView android:id="@+id/textView6"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50dp"
+                  android:textSize="20dp"
+                  android:text="COMPLETION STATUS:"
+                  android:textStyle="bold|italic"
+                   android:layout_below="@+id/wrkhrs"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+         
+    
+    
+    <Spinner
+        android:id="@+id/spstatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView6"
+        android:popupBackground="#000000"
+        />
+   
+   
+   <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+            android:layout_marginTop="10dip"
+        android:text="SUBMIT"
+        android:layout_below="@+id/textView5"
+        android:gravity="center_horizontal" />
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

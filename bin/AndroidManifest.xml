@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.slidingmenu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/download"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+
+            <!-- android:uiOptions="splitActionBarWhenNarrow" -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="main Activity"
+            android:screenOrientation="landscape" >
+
+            <!-- // android:uiOptions="splitActionBarWhenNarrow" > -->
+        </activity>
+        <activity
+            android:name=".ReqLevFragment"
+            android:label="Leave Request" >
+        </activity>
+        <!-- <receiver android:name=".BroadcastManager" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity
+            android:name=".UserRegistration"
+            android:label="User Registration" >
+        </activity>
+        <activity
+            android:name=".Login1"
+            android:label="Login" >
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+
+        <service android:name=".NotificationService" >
+        </service>
+
+        <activity
+            android:name=".ApproveLeave"
+            android:label="Approve Leave" >
+        </activity>
+        <activity
+            android:name=".Homefragment"
+            android:label="Home Fragment" >
+        </activity>
+        <activity
+            android:name=".Payroll"
+            android:label="@string/title_activity_payroll" >
+        </activity>
+        <activity
+            android:name=".Webactivity"
+            android:label="@string/title_activity_webactivity" >
+        </activity>
+    </application>
+
+</manifest>

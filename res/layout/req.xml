@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/back2"
+android:fillViewport="true">
+    
+   
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+       >
+       
+    
+       <TextView android:id="@+id/textView1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:text="Active Month:"
+                  android:textStyle="italic"
+                  android:textColor="@color/tshadow"
+                  android:gravity="top"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3"
+                   />
+     <EditText
+    android:id="@+id/ActMonth"
+    android:layout_height="wrap_content"
+    android:hint="Month"    
+    android:layout_gravity="top|center_horizontal"
+    android:layout_width="fill_parent">
+</EditText>
+    <TextView android:id="@+id/textView2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                  android:text="Leave Type:"
+                  android:textStyle="italic"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+    <Spinner
+    android:id="@+id/SpinnerLeaveType"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/textView2"
+	android:textColor="@color/blac"
+        android:popupBackground="#88aae0">
+                <!-- android:entries="@array/Leavetypelist"-->
+        
+</Spinner>
+   
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/cr">
+    <TextView android:id="@+id/textView3"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50dp"
+                  android:textSize="20dp"
+                  android:text="CR Against Date:"
+                  android:textStyle="italic"
+                   android:layout_below="@+id/spinner5"
+                  android:textColor="@color/tshadow"
+                  android:shadowColor="@color/grey_font"
+                  android:shadowDx="-2"
+                  android:shadowDy="-2"
+                  android:shadowRadius="3" />
+    <Spinner
+        android:id="@+id/spstatus1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:popupBackground="#FDFEFE"
+        />
+    </LinearLayout>
+   
+   
+ <GridLayout
+     		android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="17.05"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp" >
+
+            <RadioButton
+                android:id="@+id/full"
+                android:layout_column="1"
+                android:layout_gravity="start"
+                android:layout_row="2"
+                android:text="Full Leave" 
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/half"
+                android:layout_column="0"
+                android:layout_gravity="start"
+                android:layout_row="2"
+                android:text="Half Leave" 
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:id="@+id/bl"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="4"
+                android:text="Before Lunch" 
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/al"
+                android:layout_column="1"
+                android:layout_gravity="start"
+                android:layout_row="4"
+                android:text="After Lunch" 
+                android:layout_marginRight="2dp"
+                android:checked="false"
+                />
+          
+                
+                
+          
+            
+            
+
+            <EditText
+                android:id="@+id/openlev"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_row="5"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:ems="10"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView211"
+                android:layout_gravity="left|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:text="Open Leave" />
+
+            <TextView
+                android:id="@+id/textView310"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="17.05"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:text="From Date" />
+
+            <EditText
+                android:id="@+id/date1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Date..."
+                android:layout_row="6"
+                android:layout_column="1"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_weight="17.05"
+                android:text="To Date" />
+
+            <EditText
+                android:id="@+id/date2"
+                android:layout_width="200dp"
+                android:hint="Select Date..."
+                android:layout_row="7"
+                android:layout_column="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/noOfDays"
+				android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:layout_width="200dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_column="0"
+                android:layout_row="8"
+                android:text="No. Of Days" />
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_column="1"
+                android:layout_gravity="left|top"
+                android:layout_row="9"
+                android:layout_width="200dp"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_column="0"
+                android:layout_gravity="start|center_vertical"
+                android:layout_row="9"
+                android:text="Reason" />
+
+      
+            <Button
+                android:id="@+id/reset"
+                android:gravity="left"
+                                android:layout_column="0"
+                                android:layout_row="10"
+                android:padding="5dp"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/submit"
+                android:padding="5dp"
+                android:layout_column="1"
+				 android:layout_row="10"
+				android:gravity="right"
+				android:layout_marginRight="2dp"
+                android:text="Submit" />
+           
+
+        </GridLayout>
+         <GridLayout
+     		android:id="@+id/grid1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17.05"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp" >
+
+            
+
+            
+
+            <TextView
+                android:id="@+id/fromd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="17.05"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:text="From Date" />
+
+            <EditText
+                android:id="@+id/fd"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Select Date..."
+                android:layout_row="4"
+                android:layout_column="1"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/tod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_weight="17.05"
+                android:text="To Date" />
+
+            <EditText
+                android:id="@+id/td"
+                android:layout_width="200dp"
+                android:hint="Select Date..."
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/nd"
+				android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_width="200dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/nod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:text="No. Of Days" />
+
+            <Spinner 
+                android:id="@+id/spinspl"
+                android:layout_width="200dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:entries="@array/reasonspl"
+                android:layout_column="1"
+                android:textColor="@color/blac"
+                android:popupBackground="#88aae0"
+                />
+
+            <TextView
+                android:id="@+id/rsn"
+                android:layout_column="0"
+                android:layout_gravity="start|center_vertical"
+                android:layout_row="7"
+                android:text="Reason" />
+
+      
+            <Button
+                android:id="@+id/reset1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/submit1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Submit" />
+           
+
+        </GridLayout>
+      
+
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+		android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/viewapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Applied leave status" />
+        
+<HorizontalScrollView 
+    
+    android:id="@+id/hsv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+   android:weightSum="20" >
+	
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+     android:divider="?android:listDivider"
+     android:dividerPadding="22dip"
+     android:showDividers="middle"
+       android:weightSum="20">
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave Type"
+           android:textStyle="bold" />
+       
+      <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Application No."
+           android:textStyle="bold" />
+       
+        
+     <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="From date"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="To date"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Days"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Reporting Auth."
+           android:textStyle="bold" />
+       
+             <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave Auth."
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Application Status"
+           android:textStyle="bold" />
+        <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Approved By"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Reason"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="H.L Type"
+           android:textStyle="bold" />
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Address"
+           android:textStyle="bold" />
+       
+      <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Document Sbmt."
+           android:textStyle="bold" />
+       
+       
+       
+       
+   </LinearLayout>
+
+   <ListView
+       android:id="@+id/lstatus"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent" >
+   </ListView>
+ 
+                                      
+</LinearLayout>
+</HorizontalScrollView>
+
+        <CheckBox
+            android:id="@+id/chkb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View previous leave records" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#88aae0"
+            android:orientation="horizontal"
+            android:id="@+id/datelayout" >
+
+            <TextView
+                android:id="@+id/datefrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:text="Sel. Start Date"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/dateto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13"
+                 android:background="#ffffff"
+                android:gravity="end"
+                android:padding="10dp"
+                android:text="Sel. End Date"
+                android:textSize="20dip" />
+        </LinearLayout>
+        
+        <HorizontalScrollView 
+    
+    android:id="@+id/hsv1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+   android:weightSum="20" >
+   
+       
+
+	
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+     android:divider="?android:listDivider"
+     android:dividerPadding="22dip"
+     android:showDividers="middle"
+       android:weightSum="20">
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave Type"
+           android:textStyle="bold" />
+       
+      <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Application No."
+           android:textStyle="bold" />
+       
+        
+     <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Leave Date"
+           android:textStyle="bold" />
+    
+       
+ 
+       
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Half Leave Type"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.5"
+           android:background="#88aae0"
+           android:gravity="center_horizontal|center_vertical"
+            android:singleLine="false"
+            android:maxLines="10"
+           android:text="Application Status"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+
+   <ListView
+       android:id="@+id/levrecord"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent" >
+   </ListView>
+ 
+                                      
+</LinearLayout>
+</HorizontalScrollView>
+        
+    </LinearLayout>
+    
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+<RelativeLayout 
+ 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <ToggleButton
+        android:id="@+id/wifitoggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textOff="wifioff"
+        android:textOn="wifion" />
+ <CheckBox
+        android:id="@+id/Notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/wifitoggle"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Recieve Notifications" />
+    <CheckBox
+        android:id="@+id/brcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Notifications"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Receive No Notifications" />
+<!--      <Button  -->
+<!--         android:id="@+id/notific" -->
+<!--         android:text="notification" -->
+<!--         android:layout_width="60dp" -->
+<!--         android:layout_gravity="center_horizontal" -->
+<!--         android:layout_height="40dp"/> -->
+ 
+</RelativeLayout>
+<!-- <LinearLayout android:layout_width="match_parent" -->
+<!--     android:layou <Button  -->
+<!--         android:id="@+id/notific" -->
+<!--         android:text="notification" -->
+<!--         android:layout_width="60dp" -->
+<!--         android:layout_gravity="center_horizontal" -->
+<!--         android:layout_height="40dp"/> -->
+<!-- </LinearLayout> -->
+
+    
+
+	
+</LinearLayout>
+
+  
+    
+    
+ </ScrollView>

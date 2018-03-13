@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MKT-HRMS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="spinner_title">Activity Type</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="promptt">--Select Task--</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Broadcast Tutorial</string>
+    <string name="notificationtitle">Broadcast Tutorial</string>
+    <string name="lbltitle">"Title : "</string>
+    <string name="lbltext">"Text : "</string>
+    <string name="BroadcastReceiver">Broadcast Receiver</string>
+    <string name="wifioff">WIFI OFF</string>
+    <string name="wifion">WIFI ON</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Request Leave</item>
+        <item>Approve Leave</item>
+        <item>Payroll</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/emp1</item>
+        <item>@drawable/paypal</item>
+        <item>@drawable/log1</item>
+        <item>@drawable/log1</item>
+    </array>
+    <array name="icon">
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="Title">Request Leave</string>
+    <string name="feedbackname">Employee Name</string>
+
+    <!-- Session Description -->
+    <string name="ssn1">2017&#45;2018</string>
+    <string name="ssn2">2016&#45;2017</string>
+
+    <string-array name="ssnlist">
+        <item>@string/ssn1</item>
+        <item>@string/ssn2</item>
+    </string-array>
+
+    <!-- Leave Type Description -->
+    <string name="bfl">Before Lunch</string>
+    <string name="afl">After Lunch</string>
+
+    <string-array name="levtype1">
+        <item>@string/bfl</item>
+        <item>@string/afl</item>
+    </string-array>
+
+    <!-- Leave Type Description -->
+    <string name="a">Self Marriage</string>
+    <string name="b">Marriage of Son/Daughter</string>
+    <string name="c">Demise of Dependents</string>
+    <string name="d">Maternity Leave</string>
+    <string name="e">Others</string>
+
+    <string-array name="reasonspl">
+        <item>@string/a</item>
+        <item>@string/b</item>
+        <item>@string/c</item>
+        <item>@string/d</item>
+        <item>@string/e</item>
+    </string-array>
+
+    <string name="title_activity_payroll">Payroll</string>
+    <string name="title_activity_webactivity">Webactivity</string>
+
+</resources>

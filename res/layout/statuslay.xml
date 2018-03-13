@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hsv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+   android:weightSum="2" >
+  		
+   <GridView 
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="4"
+        android:divider="#0000CC"
+        
+        android:stretchMode="columnWidth">
+    </GridView>
+    
+  		
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+         
+     android:divider="?android:listDivider"
+     android:dividerPadding="22dip"
+     android:showDividers="middle"
+       android:weightSum="10">
+
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2.5"
+            android:background="#88aae0"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:text="Leave"
+            
+            android:singleLine="false"
+           />
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="50dp"
+           android:layout_weight="1.3"
+           android:background="#88aae0"
+           android:gravity="center_horizontal"
+           android:maxLines="2"
+           android:singleLine="false"
+           android:text="Leave Type"
+           android:textStyle="bold|italic" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+           android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:text="Application Number" />
+       
+        
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.2"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+            android:textStyle="bold|italic"
+             android:gravity="center_horizontal"
+            android:text="From date" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+             android:textStyle="bold|italic"
+              android:gravity="center_horizontal"
+            android:text="To Date" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+              android:textStyle="bold|italic"
+               android:gravity="center_horizontal"
+            android:text="Days" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+           android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:text="Rep. Auth." />
+       
+              <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#88aae0"
+             android:textStyle="bold|italic"
+              android:gravity="center_horizontal"
+            android:text="Leave Auth." />
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#88aae0"
+             android:textStyle="bold|italic"
+              android:gravity="center_horizontal"
+            android:text="App Status." />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.2"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+            android:textStyle="bold|italic"
+             android:gravity="center_horizontal"
+            android:text="Approved By" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+             android:textStyle="bold|italic"
+              android:gravity="center_horizontal"
+            android:text="Reason" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+              android:textStyle="bold|italic"
+               android:gravity="center_horizontal"
+            android:text="Half Lev. Type" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+             android:textStyle="bold|italic"
+              android:gravity="center_horizontal"
+            android:text="Address" />
+       
+       <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:background="#88aae0"
+              android:textStyle="bold|italic"
+               android:gravity="center_horizontal"
+            android:text="Doc Submit" />
+       
+       
+       
+       
+   </LinearLayout>
+
+   <ListView
+       android:id="@+id/lst"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+   </ListView>
+ 
+                                      
+</LinearLayout>
+</HorizontalScrollView>
